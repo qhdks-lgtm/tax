@@ -5,6 +5,7 @@ info:
   version: 1.0.0
 servers:
   - url: https://www.law.go.kr
+    description: 국가법령정보 API 서버
 
 paths:
   /DRF/lawSearch.do:
