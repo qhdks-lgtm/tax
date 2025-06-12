@@ -1,8 +1,9 @@
 openapi: 3.1.0
 info:
-  title: 국세청 법령해석 API
-  description: 국가법령정보공동활용 open API를 사용하여 국세청 법령해석 사례를 조회합니다.
+  title: Tax Interpretation API
+  description: 국세청 법령해석 목록을 조회하는 API입니다.
   version: 1.0.0
+
 servers:
   - url: https://www.law.go.kr
     description: 국가법령정보 API 서버
