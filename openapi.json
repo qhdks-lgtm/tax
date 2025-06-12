@@ -20,18 +20,18 @@
           { "name": "OC", "in": "query", "required": true, "schema": { "type": "string", "default": "wjh5070" } },
           { "name": "target", "in": "query", "required": true, "schema": { "type": "string", "enum": ["ntsCgmExpc"], "default": "ntsCgmExpc" } },
           { "name": "type", "in": "query", "required": true, "schema": { "type": "string", "enum": ["HTML", "XML", "JSON"], "default": "JSON" } },
-          { "name": "search", "in": "query", "required": false, "schema": { "type": "integer", "enum": [1, 2], "default": 1 } },
-          { "name": "query", "in": "query", "required": false, "schema": { "type": "string" } },
-          { "name": "display", "in": "query", "required": false, "schema": { "type": "integer", "default": 20, "maximum": 100 } },
-          { "name": "page", "in": "query", "required": false, "schema": { "type": "integer", "default": 1 } },
-          { "name": "inq", "in": "query", "required": false, "schema": { "type": "integer" } },
-          { "name": "rpl", "in": "query", "required": false, "schema": { "type": "integer" } },
-          { "name": "gana", "in": "query", "required": false, "schema": { "type": "string" } },
-          { "name": "itmno", "in": "query", "required": false, "schema": { "type": "integer" } },
-          { "name": "explYd", "in": "query", "required": false, "schema": { "type": "string", "pattern": "^\\d{8}~\\d{8}$" } },
-          { "name": "sort", "in": "query", "required": false, "schema": { "type": "string", "enum": ["lasc", "ldes", "dasc", "ddes", "nasc", "ndes"], "default": "lasc" } },
-          { "name": "popYn", "in": "query", "required": false, "schema": { "type": "string", "enum": ["Y", "N"] } },
-          { "name": "fields", "in": "query", "required": false, "schema": { "type": "string" } }
+          { "name": "search", "in": "query", "schema": { "type": "integer", "enum": [1, 2], "default": 1 } },
+          { "name": "query", "in": "query", "schema": { "type": "string" } },
+          { "name": "display", "in": "query", "schema": { "type": "integer", "default": 20, "maximum": 100 } },
+          { "name": "page", "in": "query", "schema": { "type": "integer", "default": 1 } },
+          { "name": "inq", "in": "query", "schema": { "type": "integer" } },
+          { "name": "rpl", "in": "query", "schema": { "type": "integer" } },
+          { "name": "gana", "in": "query", "schema": { "type": "string" } },
+          { "name": "itmno", "in": "query", "schema": { "type": "integer" } },
+          { "name": "explYd", "in": "query", "schema": { "type": "string", "pattern": "^\\d{8}~\\d{8}$" } },
+          { "name": "sort", "in": "query", "schema": { "type": "string", "enum": ["lasc", "ldes", "dasc", "ddes", "nasc", "ndes"], "default": "lasc" } },
+          { "name": "popYn", "in": "query", "schema": { "type": "string", "enum": ["Y", "N"] } },
+          { "name": "fields", "in": "query", "schema": { "type": "string" } }
         ],
         "responses": {
           "200": {
@@ -42,14 +42,22 @@
                   "type": "object",
                   "properties": {
                     "totalCnt": { "type": "integer" },
+                    "page": { "type": "integer" },
                     "list": {
                       "type": "array",
                       "items": {
                         "type": "object",
                         "properties": {
+                          "id": { "type": "integer" },
+                          "법령해석일련번호": { "type": "integer" },
                           "안건명": { "type": "string" },
                           "안건번호": { "type": "string" },
+                          "질의기관코드": { "type": "integer" },
+                          "질의기관명": { "type": "string" },
+                          "해석기관코드": { "type": "string" },
+                          "해석기관명": { "type": "string" },
                           "해석일자": { "type": "string" },
+                          "데이터기준일시": { "type": "string" },
                           "상세링크": { "type": "string" }
                         }
                       }
