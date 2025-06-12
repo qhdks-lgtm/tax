@@ -9,7 +9,7 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://your-site.onrender.com/openapi.yaml"
+    "url": "https://tax-plugin.onrender.com/openapi.yaml"
   },
   "logo_url": "https://your-site.onrender.com/logo.png",
   "contact_email": "wjh5070@naver.com",
