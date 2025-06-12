@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "국세청 법령해석 검색기",
+  "name_for_model": "taxInterpretApi",
+  "description_for_human": "국세청의 법령해석 사례를 검색합니다.",
+  "description_for_model": "검색어를 입력하면 국세청 법령해석 목록(JSON)을 반환합니다.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://your-site.onrender.com/openapi.yaml"
+  },
+  "logo_url": "https://your-site.onrender.com/logo.png",
+  "contact_email": "wjh5070@naver.com",
+  "legal_info_url": "https://your-site.onrender.com/legal"
+}
