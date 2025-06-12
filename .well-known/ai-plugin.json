@@ -9,7 +9,7 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://tax-plugin.onrender.com/openapi.json"
+    "url": "https://raw.githubusercontent.com/qhdks-lgtm/tax/main/openapi.json"
   },
   "logo_url": "https://tax-plugin.onrender.com/logo.png",
   "contact_email": "wjh5070@naver.com",
