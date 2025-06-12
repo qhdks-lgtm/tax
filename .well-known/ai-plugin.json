@@ -11,7 +11,7 @@
     "type": "openapi",
     "url": "https://tax-plugin.onrender.com/openapi.yaml"
   },
-  "logo_url": "https://your-site.onrender.com/logo.png",
+  "logo_url": "https://tax-plugin.onrender.com/logo.png",
   "contact_email": "wjh5070@naver.com",
-  "legal_info_url": "https://your-site.onrender.com/legal"
+  "legal_info_url": "https://tax-plugin.onrender.com/legal"
 }
