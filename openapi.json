@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://www.law.go.kr",
+      "url": "http://www.law.go.kr",
       "description": "국가법령정보 API 서버"
     }
   ],
